@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    
+    <p id="numdot">xxx</p>
+
+    <h1>EMPTY</h1>
+    <p> This man is trapped inside of walls. He thought he can never escape <p>
+    <p> However, he is taller than the wall, so is that means he doesn't want to escape? <p>
+    <p> Or, where can he go after he escape, it is all empty <p>
+    
+    <p>                </p>
+
+    <p>shift + click to jump, click again to disable
+
+    <h1>WASD to move camera, QE or drag to change camera angle</h1>
+
+    <p>
+      Left Arm Angle <input type = "range" min="-45" max="45" value="0" class="slider" id="leftArmSlide">
+      Animation: <button type="button" id="leftArmAnimationOn">ON</button>
+      <button type="button" id="leftArmAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Right Arm Angle <input type = "range" min="-45" max="45" value="0" class="slider" id="rightArmSlide">
+      Animation: <button type="button" id="rightArmAnimationOn">ON</button>
+      <button type="button" id="rightArmAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Left Fist Angle <input type = "range" min="0" max="45" value="0" class="slider" id="leftFistSlide">
+      Animation: <button type="button" id="leftFistAnimationOn">ON</button>
+      <button type="button" id="leftFistAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Right Fist Angle <input type = "range" min="0" max="45" value="0" class="slider" id="rightFistSlide">
+      Animation: <button type="button" id="rightFistAnimationOn">ON</button>
+      <button type="button" id="rightFistAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Left Leg Angle <input type = "range" min="-20" max="0" value="0" class="slider" id="leftLegSlide">
+      Animation: <button type="button" id="leftLegAnimationOn">ON</button>
+      <button type="button" id="leftLegAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Right Leg Angle <input type = "range" min="-20" max="20" value="0" class="slider" id="rightLegSlide">
+      Animation: <button type="button" id="rightLegAnimationOn">ON</button>
+      <button type="button" id="rightLegAnimationOff">Off</button>
+    <p>
+
+    <p>
+      Camera Angle <input type = "range" min="0" max="360" value="5" class="slider" id="angleSlide">
+    <p>
+    
+    <p>
+      Animation:
+      <button type="button" id="animationOn">ON</button>
+      <button type="button" id="animationOff">Off</button>
+      
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Camera.js"></script>
+
+    <script src="World.js"></script>
+    <script src="Cube.js"></script>
+  </body>
+</html>
